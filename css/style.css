@@ -1,86 +1,104 @@
-/* Font settings */
+/* General Styles */
 body {
     font-family: 'EB Garamond', serif;
 }
 
-/* Navbar custom styles */
-.navbar {
-    padding: 0.5rem 1rem;
+/* General Styles for the page container */
+.page-container {
+    max-width: 1400px; /* Increased size for a larger container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 15px; /* Optional: Add padding to the sides */
 }
 
-.navbar-brand .logo {
-    height: 40px; /* Adjust based on your logo size */
-}
-
-.navbar-nav .nav-link {
-    color: #000; /* Default text color */
-    transition: color 0.3s;
-}
-
-.navbar-nav .nav-link.active, 
-.navbar-nav .nav-link:hover {
-    color: #007bff; /* Blue color for active/hover state */
-    text-decoration: underline;
-}
-
-/* Icon styles */
-.icon {
-    height: 24px; /* Adjust based on your icons */
-    margin-left: 15px;
-}
-
-/* Center and style the text content */
-.text-content {
+/* Container for the carousel and text content */
+.carousel-section {
     position: relative;
-    text-align: left;
-    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
 }
 
-/* Style the heading and subheading */
-.text-content h1 {
-    font-size: 2.5rem;
+/* Carousel container styles */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1400px; /* Increased size for the carousel container */
+    margin: 0 auto; /* Center the container horizontally */
+    overflow: hidden;
 }
 
-.text-content p {
-    font-size: 1.25rem;
+/* Carousel styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust height as needed */
+    overflow: hidden;
 }
 
-/* Style the "SHOP NOW" button */
+/* Carousel slides container */
+.carousel-slides {
+    display: flex;
+    width: 100%;
+}
+
+/* Carousel slide */
+.carousel-slide {
+    flex: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    object-fit: cover; /* Ensure the image covers the container without repeating */
+    box-shadow: none;
+}
+
+/* Text content positioning */
+.text-content {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 10; /* Ensures text is on top of the carousel */
+    color: #000; /* Adjust text color for contrast */
+    margin: 20px;
+}
+
+/* Carousel item styles */
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+/* Heading and subheading styles */
+.heading {
+    font-size: 2em; /* Adjust size as needed */
+    margin: 0;
+    padding-top: 90px;
+    padding-left: 20px;
+}
+
+.subheading {
+    font-size: 1.3em; /* Adjust size as needed */
+    margin: 0;
+    padding-top: 90px;
+    padding-left: 20px;
+}
+
 .shop-now {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 1rem;
+    background-color: #000; /* Adjust background color */
+    color: #fff; /* Adjust text color */
     text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    border-radius: 5px;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 50px;
+    margin-left: 20px;
+    transition: text-decoration 0.3s;    
 }
 
 .shop-now:hover {
     text-decoration: underline;
-}
-
-/* Style the carousel container */
-.carousel {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.carousel-item img {
-    object-fit: cover;
-    height: 400px; /* Adjust height as needed */
-}
-
-/* Center the text content within the carousel */
-.carousel .carousel-inner {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
+    color: #fff;
 }

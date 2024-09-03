@@ -147,3 +147,66 @@ body {
 }
 
 
+/* Hide the mobile carousel on larger screens */
+.carousel-mobile {
+    display: none;
+}
+
+/* Hide the large carousel on mobile devices */
+.carousel-large {
+    display: block;
+}
+
+/* Media query for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .carousel-large {
+        display: none; /* Hide the large carousel */
+    }
+    .carousel-mobile {
+        display: block; /* Show the mobile carousel */
+    }
+    
+    /* Adjust text content for mobile */
+    .text-content {
+        position: absolute;
+        top: 20px; /* Adjust as needed for mobile */
+        left: 20px; /* Adjust as needed for mobile */
+        z-index: 10;
+        color: #000;
+        margin: 10px;
+    }
+    
+    .heading {
+        font-size: 1.8em; /* Adjust size for mobile */
+        padding-top: 60px; /* Increased padding */
+        padding-left: 20px;
+    }
+
+    .subheading {
+        font-size: 1.2em; /* Adjust size for mobile */
+        padding-top: 60px; /* Increased padding */
+        padding-left: 20px;
+    }
+    
+    .shop-now {
+        padding: 10px 20px; /* Adjust size for mobile */
+        margin-top: 40px; /* Increased margin */
+        margin-left: 20px;
+    }
+
+    /* Increase carousel height for mobile */
+    .carousel-mobile .carousel-item img {
+        height: 350px; /* Increased height */
+        object-fit: cover; /* Ensures the image covers the container */
+    }
+}
+
+/* Media query for tablets and larger screens (768px and above) */
+@media (min-width: 768px) {
+    .carousel-large {
+        display: block; /* Show the large carousel */
+    }
+    .carousel-mobile {
+        display: none; /* Hide the mobile carousel */
+    }
+}

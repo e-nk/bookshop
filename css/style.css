@@ -27,33 +27,6 @@ body {
     overflow: hidden;
 }
 
-/* Carousel styles */
-.carousel {
-    position: relative;
-    width: 100%;
-    height: auto; /* Adjust height as needed */
-    overflow: hidden;
-}
-
-/* Carousel slides container */
-.carousel-slides {
-    display: flex;
-    width: 100%;
-}
-
-/* Carousel slide */
-.carousel-slide {
-    flex: 1;
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    object-fit: cover; /* Ensure the image covers the container without repeating */
-    box-shadow: none;
-}
-
 /* Text content positioning */
 .text-content {
     position: absolute;
@@ -102,3 +75,17 @@ body {
     text-decoration: underline;
     color: #fff;
 }
+
+
+/* Make the active carousel indicator (dot) black with a darker border */
+.carousel-indicators .active {
+    background-color: black;
+    
+}
+/* Hide the previous and next arrows */
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
+}
+
+

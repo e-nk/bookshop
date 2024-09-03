@@ -1,3 +1,61 @@
+/* Header Styling */
+.navbar {
+    background-color: #fff; /* White background */
+    padding: 10px 15px; /* Optional: Add padding to the header */
+}
+
+.navbar-nav .nav-link {
+    color: #000; /* Set text color to black */
+    font-size: 1.1em; /* Increase font size */
+    padding: 10px 15px; /* Adjust padding */
+    position: relative; /* For underline animation */
+    transition: color 0.3s ease;
+}
+
+/* Hover effect with underline animation */
+.navbar-nav .nav-link:hover {
+    color: #000; /* Ensure text color stays black on hover */
+    text-decoration: none; /* Remove default underline */
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000; /* Black underline */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease; /* Animation for underline */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%; /* Expand underline on hover */
+}
+
+/* Active link underline */
+.navbar-nav .nav-item.active .nav-link {
+    color: #000; /* Ensure active link color stays black */
+}
+.navbar-nav .nav-item.active .nav-link::after {
+    width: 80%; /* Ensure underline is always visible for active link */
+    height: 2px; /* Maintain underline thickness */
+    background-color: #000; /* Black underline for active link */
+    content: ''; /* Ensure the content is set for the pseudo-element */
+    left: 50%; /* Center the underline */
+    transform: translateX(-50%); /* Center the underline */
+}
+.container {
+    max-width: 1400px; /* Boxed width like the main container */
+    margin: 0 auto; /* Center the header container */
+}
+
+/* Custom Hamburger Icon */
+.hamburger-icon {
+    width: 30px; /* Adjust the size of your custom icon */
+    height: auto;
+}
+
 /* General Styles */
 body {
     font-family: 'EB Garamond', serif;

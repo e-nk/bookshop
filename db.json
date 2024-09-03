@@ -1,0 +1,45 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "title": "Product 1",
+        "price": 29.99,
+        "category": "Category 1",
+        "images": {
+          "default": "images/product1-default.jpg",
+          "hover": "images/product1-hover.jpg"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Product 2",
+        "price": 49.99,
+        "category": "Category 2",
+        "images": {
+          "default": "images/product2-default.jpg",
+          "hover": "images/product2-hover.jpg"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Product 3",
+        "price": 19.99,
+        "category": "Category 3",
+        "images": {
+          "default": "images/product3-default.jpg",
+          "hover": "images/product3-hover.jpg"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Product 4",
+        "price": 39.99,
+        "category": "Category 4",
+        "images": {
+          "default": "images/product4-default.jpg",
+          "hover": "images/product4-hover.jpg"
+        }
+      }
+    ]
+  }
+  

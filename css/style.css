@@ -210,3 +210,107 @@ body {
         display: none; /* Hide the mobile carousel */
     }
 }
+
+
+/* Resources Section */
+.resources-section {
+    background-color: #fff; /* White background */
+    padding: 80px 0; /* Adjust padding for spacing */
+    text-align: center;
+}
+
+.resources-title {
+    font-size: 2.5em;
+    color: #000; /* Black title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.resources-text {
+    font-size: 1.2em;
+    color: #000; /* Black text */
+    max-width: 800px;
+    margin: 0 auto; /* Center the text */
+}
+
+
+
+//* Products Section */
+.products-section {
+    padding: 40px 0;
+}
+
+.products-title {
+    text-align: left;
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+/* Container for product cards */
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust as needed */
+}
+
+/* Style for individual product cards */
+.product-card {
+    position: relative;
+    width: 250px; /* Adjust width as needed */
+    height: 300px; /* Set a fixed height for the card */
+    border: none; /* Remove border */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+/* Product image styles */
+.product-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure image covers the container */
+}
+
+/* Overlay for "Add to Cart" button */
+.product-card::before {
+    content: 'Add to Cart';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-size: 16px;
+}
+
+/* Show "Add to Cart" button on hover */
+.product-card:hover::before {
+    transform: translateY(0);
+}
+
+/* Product title styles */
+.product-title {
+    margin: 10px 0 0; /* Margin at the top to push it below the image */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Product price styles */
+.product-price {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Product category styles (if needed) */
+.product-category {
+    margin: 0;
+    color: #888;
+}

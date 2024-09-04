@@ -1,6 +1,6 @@
 # ECommerce Shop
 
-Welcome to the **ECommerce Shop**! This is a simple eCommerce web application built using HTML, CSS, JavaScript, and Firebase for user authentication and cart management. The site includes various features such as product listing, add-to-cart functionality, a shopping cart page, and a Stripe integration for checkout.
+Welcome to the **ECommerce Book Shop**! This is a simple eCommerce web application built using HTML, CSS, JavaScript, and Firebase for user authentication and cart management. The site includes various features such as product listing, add-to-cart functionality, a shopping cart page, and a Stripe integration for checkout.
 
 ## Features
 
@@ -11,6 +11,22 @@ Welcome to the **ECommerce Shop**! This is a simple eCommerce web application bu
 - **Checkout:** Uses Stripe for processing payments on the checkout page.
 - **Responsive Design:** Mobile-friendly design with carousels for small and large screens.
 - **User Authentication:** Login and registration are handled by Firebase Authentication, with password-based login and user creation.
+
+## Screenshots
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="screenshots/screen2.png" alt="Screenshot 1" width="200px"/></td>
+      <td><img src="screenshots/screen1.png" alt="Screenshot 2" width="200px"/></td>
+    </tr>
+    <tr>
+      <td><img src="screenshots/cart1.png" alt="Screenshot 5" width="200px"/></td>
+      <td><img src="screenshots/checout.png" alt="Screenshot 6" width="200px"/></td>
+    </tr>
+  </table>
+</div>
+
 
 ## Technologies Used
 

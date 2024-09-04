@@ -134,18 +134,16 @@ body {
     color: #fff;
 }
 
-
 /* Make the active carousel indicator (dot) black with a darker border */
 .carousel-indicators .active {
     background-color: black;
-    
 }
+
 /* Hide the previous and next arrows */
 .carousel-control-prev,
 .carousel-control-next {
     display: none;
 }
-
 
 /* Hide the mobile carousel on larger screens */
 .carousel-mobile {
@@ -211,7 +209,6 @@ body {
     }
 }
 
-
 /* Resources Section */
 .resources-section {
     background-color: #fff; /* White background */
@@ -232,9 +229,7 @@ body {
     margin: 0 auto; /* Center the text */
 }
 
-
-
-//* Products Section */
+/* Products Section */
 .products-section {
     padding: 40px 0;
 }
@@ -257,60 +252,81 @@ body {
 .product-card {
     position: relative;
     width: 250px; /* Adjust width as needed */
-    height: 300px; /* Set a fixed height for the card */
+    height: 300px; /* Adjust height as needed */
     border: none; /* Remove border */
     border-radius: 8px;
     overflow: hidden;
-    text-align: center;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    justify-content: space-between; /* Space out elements */
+    text-align: center;
 }
 
 /* Product image styles */
 .product-card img {
     width: 100%;
-    height: 200px; /* Set a fixed height for the image */
+    height: 200px; /* Adjust height as needed */
     object-fit: cover; /* Ensure image covers the container */
+    display: block;
 }
 
 /* Overlay for "Add to Cart" button */
 .product-card::before {
     content: 'Add to Cart';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%; /* Center the button vertically */
+    left: 50%; /* Center the button horizontally */
+    transform: translate(-50%, -50%); /* Center the button */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px; /* Adjust padding */
     text-align: center;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
     font-size: 16px;
+    border-radius: 5px; /* Rounded corners for the button */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
 }
 
 /* Show "Add to Cart" button on hover */
 .product-card:hover::before {
-    transform: translateY(0);
+    opacity: 1;
 }
 
 /* Product title styles */
 .product-title {
-    margin: 10px 0 0; /* Margin at the top to push it below the image */
-    font-size: 18px;
-    font-weight: bold;
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #000;
 }
 
 /* Product price styles */
 .product-price {
-    margin: 5px 0;
-    color: #555;
+    font-size: 1.1em;
+    color: #000;
 }
 
-/* Product category styles (if needed) */
-.product-category {
-    margin: 0;
-    color: #888;
+
+#cart-count {
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 10px; /* Adjust the positioning to make it closer to the cart icon */
+    z-index: 10;
 }
+
+.cart-link {
+    position: relative;
+}
+
+.container {
+    max-width: 1400px; /* Ensuring the header remains boxed */
+    margin: 0 auto; /* Center the header container */
+    padding: 0 15px;
+}
+
+

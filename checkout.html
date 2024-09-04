@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ECommerce Shop</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/checkout.css">
+    <!-- EB Garamond Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
+    <!-- Stripe JS -->
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">ECommerce Shop</a>
+                <div class="ml-auto">
+                    <a href="cart.html" class="btn btn-outline-dark">Return to Cart</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <h1 class="text-center">Checkout</h1>
+
+        <!-- Order Summary with Product Preview -->
+        <div id="order-summary" class="mb-4">
+            <h3>Order Summary</h3>
+            <div id="product-preview" class="mb-3">
+                <!-- Product items will be listed here dynamically -->
+            </div>
+        </div>
+
+        <!-- Stripe Payment Form -->
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="cardholder-name">Cardholder Name</label>
+                <input type="text" id="cardholder-name" class="form-control" placeholder="Name on card" required>
+            </div>
+            <div class="form-group">
+                <label for="card-element">Credit or debit card</label>
+                <div id="card-element">
+                    <!-- Stripe Elements will insert the card input here -->
+                </div>
+                <div id="card-errors" role="alert" class="text-danger mt-2"></div>
+            </div>
+
+            <!-- Checkout Button with Total Price -->
+            <button id="submit" class="btn btn-dark btn-lg btn-block mt-4">Pay Now | $<span id="checkout-total">0.00</span></button>
+        </form>
+    </main>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>

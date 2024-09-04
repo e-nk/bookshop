@@ -17,12 +17,12 @@ Welcome to the **ECommerce Book Shop**! This is a simple eCommerce web applicati
 <div align="center">
   <table>
     <tr>
-      <td><img src="screenshots/screen2.png" alt="Screenshot 1" width="200px"/></td>
-      <td><img src="screenshots/screen1.png" alt="Screenshot 2" width="200px"/></td>
+      <td><img src="screenshots/screen2.png" alt="Screenshot 1" width="700px"/></td>
+      <td><img src="screenshots/screen1.png" alt="Screenshot 2" width="700px"/></td>
     </tr>
     <tr>
-      <td><img src="screenshots/cart1.png" alt="Screenshot 5" width="200px"/></td>
-      <td><img src="screenshots/checout.png" alt="Screenshot 6" width="200px"/></td>
+      <td><img src="screenshots/cart1.png" alt="Screenshot 5" width="700px"/></td>
+      <td><img src="screenshots/checout.png" alt="Screenshot 6" width="700px"/></td>
     </tr>
   </table>
 </div>

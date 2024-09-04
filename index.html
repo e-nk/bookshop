@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css"> 
     <!-- EB Garamond Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap">
 </head>
@@ -43,9 +44,9 @@
                         <a href="#" class="nav-link">
                             <img src="images/icons/search.png" alt="Search" class="icon">
                         </a>
-                        <a href="#" class="nav-link">
+                        <a href="#" class="nav-link login-icon">
                             <img src="images/icons/login.png" alt="Login" class="icon">
-                        </a>                    
+                        </a>                   
                         <a href="cart.html" class="nav-link cart-link">
                             <img src="images/icons/cart.png" alt="Cart" class="icon">
                             <span id="cart-count"></span> <!-- Cart counter -->
@@ -133,17 +134,66 @@
         
         
     </main>
-    
+    <!-- Auth Modal -->
+    <div class="modal" id="auth-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Login</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <!-- Login Form -->
+                <div id="login-form" class="auth-form active">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <button id="login-btn">Login</button>
+                    <p>Don't have an account? <a href="#" id="switch-to-register">Register here</a></p>
+                </div>
+
+                <!-- Register Form -->
+                <div id="register-form" class="auth-form">
+                    <input type="text" id="register-firstname" placeholder="First Name" required>
+                    <input type="text" id="register-lastname" placeholder="Last Name" required>
+                    <input type="email" id="register-email" placeholder="Email" required>
+                    <input type="password" id="register-password" placeholder="Password" required>
+                    <button id="register-btn">Register</button>
+                    <p>Already have an account? <a href="#" id="switch-to-login">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <!-- Footer Content -->
     </footer>
+    <!-- Firebase SDK -->
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+
+    <!-- Initialize Firebase -->
+    <script>
+      const firebaseConfig = {
+          apiKey: "AIzaSyAMOW8H75nahYFLyVH4fCs1tF5VP6turVU",
+          authDomain: "login-auth-38351.firebaseapp.com",
+          projectId: "login-auth-38351",
+          storageBucket: "login-auth-38351.appspot.com",
+          messagingSenderId: "910214094430",
+          appId: "1:910214094430:web:46b477c33c073205a61ecf"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
 
     <!-- jQuery, Popper.js, and Bootstrap JS -->
      <!-- Link to external JavaScript file -->
     <script src="js/products.js"></script>
+    <script src="js/auth.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
 </body>
 </html>
 
